@@ -7,7 +7,7 @@ const mongoose=require('mongoose')
 const dotenv=require('dotenv')
 
 dotenv.config()
-app.use(cors())
+app.use(cors('*'))
 const DbConnection=require('./Config/dbConfig')
 
 DbConnection()
